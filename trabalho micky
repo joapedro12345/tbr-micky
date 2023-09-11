@@ -5,3 +5,9 @@ select * from livros;
 select nome
 from autores 
 where nascimento <= '1900-01-01';
+
+-- 3 --
+select  titulo ,autor_id, nome
+from livros ago 
+join autores ano on ano.id = ago.autor_id
+where ano.nome = 'J.K. Rowling';
