@@ -28,3 +28,9 @@ select nome, count(autor_id) as total_de_livros_autor
 from livros ago 
 join autores ano on ano.id = ago.autor_id
 group by nome;
+
+-- 7 --
+select curso,count(a.id) as quantidade_de_alunos
+from alunos ano
+join matriculas na on na.id  = ano.id
+group by curso;
