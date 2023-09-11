@@ -22,3 +22,9 @@ where curso = "Engenharia de Software";
 select produto, sum(receita) as receita_t
 from vendas
 group by produto;
+
+-- 6 --
+select nome, count(autor_id) as total_de_livros_autor
+from livros ago 
+join autores ano on ano.id = ago.autor_id
+group by nome;
