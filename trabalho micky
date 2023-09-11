@@ -11,3 +11,9 @@ select  titulo ,autor_id, nome
 from livros ago 
 join autores ano on ano.id = ago.autor_id
 where ano.nome = 'J.K. Rowling';
+
+-- 4 --
+select aluno_id, nome, curso
+from alunos u
+left join matriculas na on na.id  = u.id
+where curso = "Engenharia de Software";
