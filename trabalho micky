@@ -88,4 +88,7 @@ select nome, curso
 from alunos u
 right join matriculas na on na.id  = ano.id;
 
-
+-- 15 --
+select nome, curso
+from alunos u
+inner join matriculas na on na.id  = ano.id;
