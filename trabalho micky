@@ -17,3 +17,8 @@ select aluno_id, nome, curso
 from alunos u
 left join matriculas na on na.id  = u.id
 where curso = "Engenharia de Software";
+
+-- 5 --
+select produto, sum(receita) as receita_t
+from vendas
+group by produto;
