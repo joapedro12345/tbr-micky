@@ -39,3 +39,9 @@ group by curso;
 select produto,avg(receita) as media_por_produto
 from vendas
 group by produto;
+
+-- 9 --
+create view receita_total as 
+select produto, sum(receita) as receita_t
+from vendas
+group by produto;
