@@ -74,3 +74,13 @@ right join matriculas na on na.id  = ano.id;
 
 select * 
 from aluno_curso;
+
+-- 13 --
+insert into autores(id, nome, nascimento)
+values (null,"PEDRO","2006-11-24");
+
+select nome, titulo
+from  autores ano
+left join  livros ago  on ano.id = ago.autor_id;
+
+
